@@ -1,9 +1,15 @@
 'use strict';
 
+$(document).ready(function(){
+
 //program generates a random number between 19 and 120
 
-const randNum = Math.floor(Math.random()*120)+19;
-console.log(randNum);
+const randNum = Math.floor(Math.random() * ((120-19)+1) + 19);
+$('#randNum').html(randNum);
+    
+//console.log(randNum); it works!!!
+
+
 
 //each crystal has a hidden value i.e. random number between1 and 12
 
@@ -27,5 +33,11 @@ const sapphire = Math.floor(Math.random()*12)+1;
 
 
 //outcome recorded in winsLosses
+//const wins = win;
+//const lose = lose;
 
 //game restars, page does NOT reload
+
+
+
+})
