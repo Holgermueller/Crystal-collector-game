@@ -12,13 +12,62 @@
 
 
 </head>
+
 <body>
-    
+
+    <header class="header">Crystal Collector!!</header>
 
 
 
+    <main>
+
+    <div class="instructions">
+        <p>You will be given a random number at the begining of this game.</p>
+        <br>
+        <p>
+            There are four crystals below.
+            By clicking on a crystal, you will add a specific number of points
+            to your total score.
+        </p>
+        <br>
+        <p>
+            You win by matching your total score to the random number;
+            you lose the game if your score exceeds the random number.
+        </p>
+        <br>
+        <p>
+            Each crystal's value remains hidden until you click it.
+        </p>
+        <br>
+        <p>
+            Each crystal's value changes each time the game starts.
+        </p>
+    </div>
+
+    <div class="random-number" id="randNum"></div>
+
+    <div class="wins-loses" id="winsLosses">
+        <p>Wins:__</p>
+        <br>
+        <p>Losses:__</p>
+    </div>
+
+    <div class="crystal-array" id="crysArray">
+        <button id="button1" value="#" class="jewel"></button>
+        <button id="button2" value="#" class="jewel"></button>
+        <button id="button3" value="#" class="jewel"></button>
+        <button id="button4" value="#" class="jewel"></button>
+    </div>
+
+    <div class="total-score"> Your total score is:</div>
+
+    <div class="total-score" id="totScore">___</div>
+
+    </main>
 
 
+
+    <footer class="footer">Copyright 2018 Holger Mueller</footer>
 
 
     <script type="text/javascript" src="../Assets/game.js"></script>
