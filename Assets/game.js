@@ -12,25 +12,39 @@ $('#randNum').html(randNum);
 
 
 //each crystal has a hidden value i.e. random number between1 and 12
+let savedNum = "";
+let pearl = "";
+let emld = "";
+let ruby = "";
+let sapphire = "";
 
-var savedNum = Math.floor(Math.random()*12)+1;
-    $('#pearl, #emld, #ruby, #sapphire').click(function() {
-        $('#totScore').html(savedNum);
+$('#pearl').click(function() {
+    pearl = Math.floor(Math.random()*12)+1;
+    $('#totScore').text(pearl);
     });
 
 //const pearl = Math.floor(Math.random()*12)+1;
 
 //console.log(pearl);
 
-//const emld = Math.floor(Math.random()*12)+1;
+$('#emld').click(function() {
+    emld = Math.floor(Math.random()*12)+1;
+    $('#totScore').text(emld);
+    });
 
 //console.log(emld);
 
-//const ruby = Math.floor(Math.random()*12)+1;
+$('#ruby').click(function() {
+    ruby = Math.floor(Math.random()*12)+1;
+    $('#totScore').text(ruby);
+    });
 
 //console.log(ruby);
 
-//const sapphire = Math.floor(Math.random()*12)+1;
+$('#sapphire').click(function() {
+    sapphire = Math.floor(Math.random()*12)+1;
+    $('#totScore').text(sapphire);
+    });
 
 //console.log(sapphire);
 
