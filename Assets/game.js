@@ -13,21 +13,34 @@ $('#randNum').html(randNum);
 
 //each crystal has a hidden value i.e. random number between1 and 12
 
-const pearl = Math.floor(Math.random()*12)+1;
+var savedNum = Math.floor(Math.random()*12)+1;
+    $('#pearl, #emld, #ruby, #sapphire').click(function() {
+        $('#totScore').html(savedNum);
+    });
+
+//const pearl = Math.floor(Math.random()*12)+1;
+
 //console.log(pearl);
 
-const emld = Math.floor(Math.random()*12)+1;
+//const emld = Math.floor(Math.random()*12)+1;
+
 //console.log(emld);
 
-const ruby = Math.floor(Math.random()*12)+1;
+//const ruby = Math.floor(Math.random()*12)+1;
+
 //console.log(ruby);
 
-const sapphire = Math.floor(Math.random()*12)+1;
+//const sapphire = Math.floor(Math.random()*12)+1;
+
 //console.log(sapphire);
 
-//player clicks the crystals
+//player clicks the crystals to add value to totScore
 
-//values are totalled in totScore
+
+
+
+
+
 
 //script determines if player wins or loses
 
