@@ -13,46 +13,41 @@ $('#randNum').html(randNum);
 
 //each crystal has a hidden value i.e. random number between1 and 12
 let savedNum = "";
-let pearl = "";
-let emld = "";
-let ruby = "";
-let sapphire = "";
 
-$('#pearl').click(function() {
-    pearl = Math.floor(Math.random()*12)+1;
-    $('#totScore').text(pearl);
-    });
 
-//const pearl = Math.floor(Math.random()*12)+1;
+let pearl = Math.floor(Math.random()*12)+1;
 
 //console.log(pearl);
 
-$('#emld').click(function() {
-    emld = Math.floor(Math.random()*12)+1;
-    $('#totScore').text(emld);
-    });
+let emld = Math.floor(Math.random()*12)+1;
 
 //console.log(emld);
 
-$('#ruby').click(function() {
-    ruby = Math.floor(Math.random()*12)+1;
-    $('#totScore').text(ruby);
-    });
+let ruby = Math.floor(Math.random()*12)+1;
 
 //console.log(ruby);
 
-$('#sapphire').click(function() {
-    sapphire = Math.floor(Math.random()*12)+1;
-    $('#totScore').text(sapphire);
-    });
+let sapphire = Math.floor(Math.random()*12)+1;
 
 //console.log(sapphire);
 
 //player clicks the crystals to add value to totScore
 
+$('#pearl').click(function() {
+    $('#totScore').text(pearl);
+})
 
+$('#emld').click(function() {
+    $('#totScore').text(emld);
+})
 
+$('#ruby').click(function() {
+    $('#totScore').text(ruby);
+})
 
+$('#sapphire').click(function() {
+    $('#totScore').text(sapphire);
+})
 
 
 
