@@ -31,30 +31,36 @@ let sapphire = Math.floor(Math.random()*12)+1;
 
 //player clicks the crystals to display value to totScore
 
+let totScore = 0;
+$('#totScore').text(totScore);
+
 $('#pearl').click(function() {
-    $('#totScore').text(pearl);
+    totScore = totScore + pearl
+    $('#totScore').text(totScore);
+    console.log(pearl);
 })
 
 $('#emld').click(function() {
-    $('#totScore').text(emld);
+    totScore = totScore + emld;
+    $('#totScore').text(totScore);
+    console.log(emld);
 })
 
 $('#ruby').click(function() {
-    $('#totScore').text(ruby);
+    totScore = totScore + ruby;
+    $('#totScore').text(totScore);
+    console.log(ruby);
 })
 
 $('#sapphire').click(function() {
-    $('#totScore').text(sapphire);
+    totScore = totScore + sapphire;
+    $('#totScore').text(totScore);
+    console.log(sapphire);
 })
 
-//random numbers get added together
+//random numbers (jewels) get added together
 
-let totScore = '';
 
-$('#totScore').click(function() {
-    totScore += pearl + emld + ruby + sapphire;
-    console.log(totScore);
-})
 
 //script determines if player wins or loses
 
