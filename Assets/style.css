@@ -4,3 +4,32 @@
 body {
     background-image: url("./images/skyscraper/skyscraper.png");
 }
+
+/*header*/
+
+.header {
+    text-align: center;
+    background-color: silver;
+    border: 2px solid dodgerblue;
+}
+
+.instructions {
+    width: 75%;
+    margin-top: 37px;
+    margin-left: 11%;
+    text-align: center;
+    background-color: silver;
+    border: 2px solid dodgerblue;
+}
+
+.random-number {
+    text-align: center;
+    background-color: silver;
+    border: 2px solid dodgerblue;
+}
+
+.crystal-array {
+    text-align: center;
+    background-color: silver;
+    border: 2px solid dodgerblue;
+}
