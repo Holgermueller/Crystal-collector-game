@@ -11,9 +11,10 @@
 <link rel="stylesheet" type="text.css" href="../Assets/reset.css">
  <!--scripts-->
  <script
- src="https://code.jquery.com/jquery-3.3.1.js"
- integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
- crossorigin="anonymous"></script>
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+ <!-- console.log(losses); -->
  <script type="text/javascript" src="./Assets/game.js"></script>
 
 </head>
@@ -62,10 +63,10 @@
 <br>
     <div class="total-score" id="totScore">0</div>
 
-    <div class="wins-loses" id="winsLosses">
-        <p>Wins:__</p>
+    <div class="wins-loses">
+        <p id="wins">Wins: 0</p>
         <br>
-        <p>Losses:__</p>
+        <p id="losses">Losses: 0</p>
     </div>
 
     </main>

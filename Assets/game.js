@@ -4,10 +4,10 @@ $(document).ready(function(){
 
 //program generates a random number between 19 and 120
 
-const randNum = Math.floor(Math.random() * ((120-19)+1) + 19);
-$('#randNum').html(randNum);
+const randNumber = Math.floor(Math.random() * ((120-19)+1) + 19);
+$('#randNum').html(randNumber);
     
-//console.log(randNum); it works!!!
+console.log(randNumber); //it works!!!
 
 
 
@@ -58,16 +58,26 @@ $('#sapphire').click(function() {
     console.log(sapphire);
 })
 
-//random numbers (jewels) get added together
+//random numbers (jewels) get added together: look above
+
+//script determines if player wins or loses and outcome recorded in winsLosses
+let wins = 0; //#wins
+let losses = 0;  //#losses
+
+function winLose() {
+    if ( totScore === randNumber ) {
+     wins++;
+     console.log(wins);
+} else if ( totScore > randNumber ) {
+     losses++;
+     console.log(losses);
+}
+
+}
 
 
 
-//script determines if player wins or loses
 
-
-//outcome recorded in winsLosses
-//const wins = win;
-//const lose = lose;
 
 //game restars, page does NOT reload
 
