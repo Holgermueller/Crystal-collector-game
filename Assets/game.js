@@ -37,40 +37,43 @@ $('#totScore').text(totScore);
 $('#pearl').click(function() {
     totScore = totScore + pearl
     $('#totScore').text(totScore);
-    console.log(pearl);
+    //console.log(pearl);
 })
 
 $('#emld').click(function() {
     totScore = totScore + emld;
     $('#totScore').text(totScore);
-    console.log(emld);
+    //console.log(emld);
 })
 
 $('#ruby').click(function() {
     totScore = totScore + ruby;
     $('#totScore').text(totScore);
-    console.log(ruby);
+    //console.log(ruby);
 })
 
 $('#sapphire').click(function() {
     totScore = totScore + sapphire;
     $('#totScore').text(totScore);
-    console.log(sapphire);
+    //console.log(sapphire);
 })
 
 //random numbers (jewels) get added together: look above
 
 //script determines if player wins or loses and outcome recorded in winsLosses
+
 let wins = 0; //#wins
 let losses = 0;  //#losses
 
 function winLose() {
-    if ( totScore === randNumber ) {
-     wins++;
+    if ( totScore = randNumber ) {
+     wins = wins++;
      console.log(wins);
+     $('#wins').text(wins);
 } else if ( totScore > randNumber ) {
-     losses++;
+     losses = losses++;
      console.log(losses);
+     $('#losses').text(losses);
 }
 
 }
@@ -83,4 +86,4 @@ function winLose() {
 
 
 
-})
+});
