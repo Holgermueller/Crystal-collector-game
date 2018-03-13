@@ -45,7 +45,7 @@ function win() {
 function lose() {
     losses = losses+1;
     $('#losses').text(losses);
-    lose();
+    reset();
 }
 
 $('#pearl').click(function() {
@@ -56,7 +56,7 @@ $('#pearl').click(function() {
         win()
        } else if ( totScore > randNumber ) {
         lose()
-   }   
+   }  
 })
 
 $('#emld').click(function() {
@@ -109,7 +109,6 @@ function reset () {
     let ruby = Math.floor(Math.random()*12)+1;
     let sapphire = Math.floor(Math.random()*12)+1;
     let totScore = 0;
-    $('#totScore').text(totScore);
 }
 
 

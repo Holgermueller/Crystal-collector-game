@@ -8,9 +8,15 @@ body {
 /*header*/
 
 .header {
+    width: 45%;
+    margin-left: 27%;
     text-align: center;
-    background-color: silver;
-    border: 2px solid dodgerblue;
+    background-color: #00e5ff;
+    border: 8px solid;
+    border-top-color: #00d8ff;
+    border-right-color: #00d8ff;
+    border-bottom-color: #00a9ff;
+    border-left-color: #00a9ff;
 }
 
 .instructions {
@@ -26,8 +32,12 @@ body {
 .random-number {
     width: 15%;
     text-align: center;
-    background-color: silver;
-    border: 2px solid dodgerblue;
+    background-color: #00e5ff;
+    border: 8px solid;
+    border-top-color: #00d8ff;
+    border-right-color: #00d8ff;
+    border-bottom-color: #00a9ff;
+    border-left-color: #00a9ff;
     margin-top: 24px;
     margin-left: 43%;
     font-size: 4em;
@@ -52,20 +62,43 @@ body {
 
 .total-score {
     text-align: center;
-    background-color: silver;
-    border: 2px solid dodgerblue;
+    background-color: #00e5ff;
+    border: 8px solid;
+    border-top-color: #00d8ff;
+    border-right-color: #00d8ff;
+    border-bottom-color: #00a9ff;
+    border-left-color: #00a9ff;
     font-size: 3em;
     width: 26%;
+    margin-top: 2%;
+    margin-left: 22%;
 }
 
 .wins-loses {
+    float: right;
+
+
     text-align: center;
-    background-color: silver;
-    border: 2px solid dodgerblue;
+    width: 26%;
+    background-color: #00e5ff;
+    border: 8px solid;
+    border-top-color: #00d8ff;
+    border-right-color: #00d8ff;
+    border-bottom-color: #00a9ff;
+    border-left-color: #00a9ff;
+    margin-top: 2%;
 }
 
 .footer {
+    width: 26%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 36%;
+    margin-top: 25%;
     text-align: center;
-    background-color: silver;
-    border: 2px solid dodgerblue;
-}
+    background-color: #00e5ff;
+    border: 8px solid;
+    border-top-color: #00d8ff;
+    border-right-color: #00d8ff;
+    border-bottom-color: #00a9ff;
+    border-left-color: #00a9ff;}
