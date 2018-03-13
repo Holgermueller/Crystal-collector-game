@@ -33,21 +33,23 @@ let sapphire = Math.floor(Math.random()*12)+1;
 
 let wins = 0; //#wins
 let losses = 0;  //#losses
+
 let totScore = 0;
 $('#totScore').text(totScore);
+console.log(totScore);
 
 function win() {
     wins = wins+1;
     $('#wins').text(wins);
-    reset();
     resetTwo();
+    reset();
 }
 
 function lose() {
     losses = losses+1;
     $('#losses').text(losses);
-    reset();
     resetTwo();
+    reset();
 }
 
 $('#pearl').click(function() {
@@ -55,11 +57,12 @@ $('#pearl').click(function() {
     $('#totScore').text(totScore);
     //console.log(pearl);
     if ( totScore === randNumber ) {
-        win()
+        win();
+        reset();
        } else if ( totScore > randNumber ) {
-        lose()
+        lose();
+        reset();
    }  
-   reset();
 })
 
 $('#emld').click(function() {
@@ -67,11 +70,12 @@ $('#emld').click(function() {
     $('#totScore').text(totScore);
     //console.log(emld);
     if ( totScore === randNumber ) {
-        win()
-       } else if ( totScore > randNumber ) {
-        lose()
+        win();
+        reset();
+    } else if ( totScore > randNumber ) {
+        lose();
+        reset();
    }
-   reset();
 })
 
 $('#ruby').click(function() {
@@ -79,11 +83,12 @@ $('#ruby').click(function() {
     $('#totScore').text(totScore);
     //console.log(ruby);
     if ( totScore === randNumber ) {
-        win()
+        win();
+        reset();
        } else if ( totScore > randNumber ) {
-        lose()
+        lose();
+        reset();
     }
-    reset();
 })
 
 $('#sapphire').click(function() {
@@ -91,11 +96,12 @@ $('#sapphire').click(function() {
     $('#totScore').text(totScore);
     //console.log(sapphire);
     if ( totScore === randNumber ) {
-        win()
+        win();
+        reset();
        } else if ( totScore > randNumber ) {
-        lose()
+        lose();
+        reset();
    }
-   reset();
 })
 
 //random numbers (jewels) get added together: look above
@@ -108,17 +114,17 @@ console.log(losses);
 //game restarst, page does NOT reload
 
 function reset () {
-    let totScore = 0;
-
+    totScore = 0;
+    $('#totScore').text(totScore);
 }
 
 function resetTwo () {
-    const randNumber = Math.floor(Math.random() * ((120-19)+1) + 19);
+    randNumber = Math.floor(Math.random() * ((120-19)+1) + 19);
     $('#randNum').html(randNumber);
-    let pearl = Math.floor(Math.random()*12)+1;
-    let emld = Math.floor(Math.random()*12)+1;
-    let ruby = Math.floor(Math.random()*12)+1;
-    let sapphire = Math.floor(Math.random()*12)+1;
+    pearl = Math.floor(Math.random()*12)+1;
+    emld = Math.floor(Math.random()*12)+1;
+    ruby = Math.floor(Math.random()*12)+1;
+    sapphire = Math.floor(Math.random()*12)+1;
 }
 
 
