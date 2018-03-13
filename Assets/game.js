@@ -15,19 +15,19 @@ console.log(randNumber); //it works!!!
 
 let pearl = Math.floor(Math.random()*12)+1;
 
-//console.log(pearl);
+console.log(pearl);
 
 let emld = Math.floor(Math.random()*12)+1;
 
-//console.log(emld);
+console.log(emld);
 
 let ruby = Math.floor(Math.random()*12)+1;
 
-//console.log(ruby);
+console.log(ruby);
 
 let sapphire = Math.floor(Math.random()*12)+1;
 
-//console.log(sapphire);
+console.log(sapphire);
 
 //player clicks the crystals to display value to totScore
 
@@ -59,9 +59,11 @@ $('#pearl').click(function() {
     if ( totScore === randNumber ) {
         win();
         reset();
+        resetTwo();
        } else if ( totScore > randNumber ) {
         lose();
         reset();
+        resetTwo();
    }  
 })
 
@@ -72,9 +74,11 @@ $('#emld').click(function() {
     if ( totScore === randNumber ) {
         win();
         reset();
+        resetTwo();
     } else if ( totScore > randNumber ) {
         lose();
         reset();
+        resetTwo();
    }
 })
 
@@ -85,9 +89,11 @@ $('#ruby').click(function() {
     if ( totScore === randNumber ) {
         win();
         reset();
+        resetTwo();
        } else if ( totScore > randNumber ) {
         lose();
         reset();
+        resetTwo();
     }
 })
 
@@ -98,9 +104,11 @@ $('#sapphire').click(function() {
     if ( totScore === randNumber ) {
         win();
         reset();
+        resetTwo();
        } else if ( totScore > randNumber ) {
         lose();
         reset();
+        resetTwo();
    }
 })
 
@@ -119,7 +127,7 @@ function reset () {
 }
 
 function resetTwo () {
-    randNumber = Math.floor(Math.random() * ((120-19)+1) + 19);
+    let randNumber = Math.floor(Math.random() * ((120-19)+1) + 19);
     $('#randNum').html(randNumber);
     pearl = Math.floor(Math.random()*12)+1;
     emld = Math.floor(Math.random()*12)+1;
