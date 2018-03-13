@@ -17,8 +17,8 @@ body {
     width: 75%;
     margin-top: 37px;
     margin-left: 11%;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: silver;
     border: 2px solid dodgerblue;
 }
@@ -38,17 +38,24 @@ body {
     background-color: silver;
     border: 2px solid dodgerblue;
     margin-top: 3%;
-    width: 22%;
+    width: 50%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-left: 25%;
 }
 
 .jewel {
-    margin-left: 5%;
+    margin-right: 3%;
+    margin-left: 3%;
+    border-radius: 15px;
 }
 
 .total-score {
     text-align: center;
     background-color: silver;
     border: 2px solid dodgerblue;
+    font-size: 3em;
+    width: 26%;
 }
 
 .wins-loses {
