@@ -31,58 +31,75 @@ let sapphire = Math.floor(Math.random()*12)+1;
 
 //player clicks the crystals to display value to totScore
 
+let wins = 0; //#wins
+let losses = 0;  //#losses
 let totScore = 0;
 $('#totScore').text(totScore);
+
+function win() {
+    alert("You Win!");
+    wins = wins++;
+    $('#wins').text(wins);
+}
+
+function lose() {
+    alert("You lose!!");
+    losses = losses++;
+    $('#losses').text(losses);
+}
 
 $('#pearl').click(function() {
     totScore = totScore + pearl
     $('#totScore').text(totScore);
     //console.log(pearl);
+    if ( totScore === randNumber ) {
+        win()
+       } else if ( totScore > randNumber ) {
+        lose()
+   }   
 })
 
 $('#emld').click(function() {
     totScore = totScore + emld;
     $('#totScore').text(totScore);
     //console.log(emld);
+    if ( totScore === randNumber ) {
+        win()
+       } else if ( totScore > randNumber ) {
+        lose()
+   }
 })
 
 $('#ruby').click(function() {
     totScore = totScore + ruby;
     $('#totScore').text(totScore);
     //console.log(ruby);
+    if ( totScore === randNumber ) {
+        win()
+       } else if ( totScore > randNumber ) {
+        lose()
+       }
 })
 
 $('#sapphire').click(function() {
     totScore = totScore + sapphire;
     $('#totScore').text(totScore);
     //console.log(sapphire);
+    if ( totScore === randNumber ) {
+        win()
+       } else if ( totScore > randNumber ) {
+        lose()
+   }
 })
 
 //random numbers (jewels) get added together: look above
 
 //script determines if player wins or loses and outcome recorded in winsLosses
 
-let wins = 0; //#wins
-let losses = 0;  //#losses
+console.log(wins);
+console.log(losses);
 
-function winLose() {
-    if ( totScore = randNumber ) {
-     wins = wins++;
-     console.log(wins);
-     $('#wins').text(wins);
-} else if ( totScore > randNumber ) {
-     losses = losses++;
-     console.log(losses);
-     $('#losses').text(losses);
-}
-
-}
-
-
-
-
-
-//game restars, page does NOT reload
+//game restarst, page does NOT reload
 
 
 
