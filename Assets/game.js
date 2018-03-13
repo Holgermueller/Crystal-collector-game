@@ -37,15 +37,15 @@ let totScore = 0;
 $('#totScore').text(totScore);
 
 function win() {
-    alert("You Win!");
-    wins = wins++;
+    wins = wins+1;
     $('#wins').text(wins);
+    reset();
 }
 
 function lose() {
-    alert("You lose!!");
-    losses = losses++;
+    losses = losses+1;
     $('#losses').text(losses);
+    lose();
 }
 
 $('#pearl').click(function() {
@@ -100,6 +100,17 @@ console.log(wins);
 console.log(losses);
 
 //game restarst, page does NOT reload
+
+function reset () {
+    const randNumber = Math.floor(Math.random() * ((120-19)+1) + 19);
+    $('#randNum').html(randNumber);
+    let pearl = Math.floor(Math.random()*12)+1;
+    let emld = Math.floor(Math.random()*12)+1;
+    let ruby = Math.floor(Math.random()*12)+1;
+    let sapphire = Math.floor(Math.random()*12)+1;
+    let totScore = 0;
+    $('#totScore').text(totScore);
+}
 
 
 

@@ -17,18 +17,47 @@ body {
     width: 75%;
     margin-top: 37px;
     margin-left: 11%;
-    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
     background-color: silver;
     border: 2px solid dodgerblue;
 }
 
 .random-number {
+    width: 15%;
+    text-align: center;
+    background-color: silver;
+    border: 2px solid dodgerblue;
+    margin-top: 24px;
+    margin-left: 43%;
+    font-size: 4em;
+}
+
+.crystal-array {
+    text-align: center;
+    background-color: silver;
+    border: 2px solid dodgerblue;
+    margin-top: 3%;
+    width: 22%;
+}
+
+.jewel {
+    margin-left: 5%;
+}
+
+.total-score {
     text-align: center;
     background-color: silver;
     border: 2px solid dodgerblue;
 }
 
-.crystal-array {
+.wins-loses {
+    text-align: center;
+    background-color: silver;
+    border: 2px solid dodgerblue;
+}
+
+.footer {
     text-align: center;
     background-color: silver;
     border: 2px solid dodgerblue;
