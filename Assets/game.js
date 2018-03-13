@@ -40,12 +40,14 @@ function win() {
     wins = wins+1;
     $('#wins').text(wins);
     reset();
+    resetTwo();
 }
 
 function lose() {
     losses = losses+1;
     $('#losses').text(losses);
     reset();
+    resetTwo();
 }
 
 $('#pearl').click(function() {
@@ -57,6 +59,7 @@ $('#pearl').click(function() {
        } else if ( totScore > randNumber ) {
         lose()
    }  
+   reset();
 })
 
 $('#emld').click(function() {
@@ -68,6 +71,7 @@ $('#emld').click(function() {
        } else if ( totScore > randNumber ) {
         lose()
    }
+   reset();
 })
 
 $('#ruby').click(function() {
@@ -78,7 +82,8 @@ $('#ruby').click(function() {
         win()
        } else if ( totScore > randNumber ) {
         lose()
-       }
+    }
+    reset();
 })
 
 $('#sapphire').click(function() {
@@ -90,6 +95,7 @@ $('#sapphire').click(function() {
        } else if ( totScore > randNumber ) {
         lose()
    }
+   reset();
 })
 
 //random numbers (jewels) get added together: look above
@@ -102,13 +108,17 @@ console.log(losses);
 //game restarst, page does NOT reload
 
 function reset () {
+    let totScore = 0;
+
+}
+
+function resetTwo () {
     const randNumber = Math.floor(Math.random() * ((120-19)+1) + 19);
     $('#randNum').html(randNumber);
     let pearl = Math.floor(Math.random()*12)+1;
     let emld = Math.floor(Math.random()*12)+1;
     let ruby = Math.floor(Math.random()*12)+1;
     let sapphire = Math.floor(Math.random()*12)+1;
-    let totScore = 0;
 }
 
 
