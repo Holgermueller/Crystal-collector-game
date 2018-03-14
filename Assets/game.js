@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 //program generates a random number between 19 and 120
 
-const randNumber = Math.floor(Math.random() * ((120-19)+1) + 19);
+let randNumber = Math.floor(Math.random() * ((120-19)+1) + 19);
 $('#randNum').html(randNumber);
     
 console.log(randNumber); //it works!!!
@@ -127,7 +127,7 @@ function reset () {
 }
 
 function resetTwo () {
-    let randNumber = Math.floor(Math.random() * ((120-19)+1) + 19);
+    randNumber = Math.floor(Math.random() * ((120-19)+1) + 19);
     $('#randNum').html(randNumber);
     pearl = Math.floor(Math.random()*12)+1;
     emld = Math.floor(Math.random()*12)+1;
