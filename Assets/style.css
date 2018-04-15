@@ -53,22 +53,31 @@ body {
 
 .jewel {
     margin: 0 3% 0 3%;
+}
+
+.pearl {
+    height: 80px;
+    width: 80px;
     border-radius: 15px;
+    background-color: #fffff0;
 }
 
 .emld {
     height: 80px;
     width: 80px;
+    background-color: green;
 }
 
 .ruby {
     height: 80px;
     width: 80px;
+    background-color: firebrick;
 }
 
 .sapphire {
     height: 80px;
-    width: 80px; 
+    width: 80px;
+    background-color: #f0ff00;
 }
 
 .total-score {
