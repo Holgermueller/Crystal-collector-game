@@ -52,13 +52,13 @@ body {
 }
 
 .jewel {
+    height: 80px;
+    width: 80px;
+    border: 15px solid;
     margin: 0 2% 0 3%;
 }
 
 .amethyst {
-    height: 80px;
-    width: 80px;
-    border: 15px solid;
     border-top-color: #9900fa;
     border-right-color: #9900fa;
     border-bottom-color: #820099;
@@ -67,9 +67,6 @@ body {
 }
 
 .emld {
-    height: 80px;
-    width: 80px;
-    border: 15px solid;
     border-top-color: #66dc00;
     border-right-color: #66dc00;
     border-bottom-color: #006600;
@@ -78,9 +75,6 @@ body {
 }
 
 .ruby {
-    height: 80px;
-    width: 80px;
-    border: 15px solid;
     border-top-color: #ff0000;
     border-right-color: #ff0000;
     border-bottom-color: firebrick;
@@ -89,9 +83,6 @@ body {
 }
 
 .sapphire {
-    height: 80px;
-    width: 80px;
-    border: 15px solid;
     border-top-color: #faff00;
     border-right-color: #faff00;
     border-bottom-color: #ebcc00;
@@ -143,3 +134,87 @@ body {
     border-right-color: #00d8ff;
     border-bottom-color: #00a9ff;
     border-left-color: #00a9ff;}
+
+/*768px*/
+
+@media (max-width: 768px) {
+
+    .random-number {
+        margin-top: 3%;
+    }
+
+    .jewel {
+       margin-right: -1%;
+    }
+
+    .jewel:nth-child(4) {
+        margin-right: 8px;
+    }
+
+    .footer {
+        margin-top: 37%;
+    }
+
+}
+
+/*640px*/
+
+@media (max-width: 640px) {
+
+    .crystal-array {
+       width: 64%;
+       margin-left: 19%
+    }
+
+    .footer {
+        width: 43%;
+        margin-top: 52%;
+        margin-left: 29%;
+    }
+}
+
+/*375px*/
+
+@media (max-width: 375px) {
+
+    .header {
+        width: 91%;
+        margin-left: 2%;
+    }
+
+    .instructions {
+        margin-left: 8%;
+    }
+
+   .random-number {
+       width: 32%;
+       margin-left: 32%;
+   }
+
+   .crystal-array {
+      width: 92%;
+      margin-left: 4%;
+   }
+
+   .jewel {
+       height: 70px;
+       width: 70px;
+   }
+
+   .total-score {
+       margin-left: 8%;
+       width: 35%;
+
+   }
+
+   .wins-loses {
+       width: 34%;
+       margin-right: 9%;
+   }
+
+   .footer {
+       margin-top: 104%;
+       margin-left: 17%;
+       width: 60%;
+   }
+}
