@@ -52,32 +52,51 @@ body {
 }
 
 .jewel {
-    margin: 0 3% 0 3%;
+    margin: 0 2% 0 3%;
 }
 
-.pearl {
+.amethyst {
     height: 80px;
     width: 80px;
-    border-radius: 15px;
-    background-color: #fffff0;
+    border: 15px solid;
+    border-top-color: #9900fa;
+    border-right-color: #9900fa;
+    border-bottom-color: #820099;
+    border-left-color: #820099;
+    background-color: #8c00c3;
 }
 
 .emld {
     height: 80px;
     width: 80px;
-    background-color: green;
+    border: 15px solid;
+    border-top-color: #66dc00;
+    border-right-color: #66dc00;
+    border-bottom-color: #006600;
+    border-left-color: #006600;
+    background-color: #239900;
 }
 
 .ruby {
     height: 80px;
     width: 80px;
-    background-color: firebrick;
+    border: 15px solid;
+    border-top-color: #ff0000;
+    border-right-color: #ff0000;
+    border-bottom-color: firebrick;
+    border-left-color: firebrick;
+    background-color: #cc0000;
 }
 
 .sapphire {
     height: 80px;
     width: 80px;
-    background-color: #f0ff00;
+    border: 15px solid;
+    border-top-color: #faff00;
+    border-right-color: #faff00;
+    border-bottom-color: #ebcc00;
+    border-left-color: #ebcc00;
+    background-color: #facc00;
 }
 
 .total-score {

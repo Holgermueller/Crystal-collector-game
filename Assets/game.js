@@ -11,9 +11,9 @@ console.log(randNumber); //it works!!!
 
 //each crystal has a hidden value i.e. random number between1 and 12
 
-let pearl = Math.floor(Math.random()*12)+1;
+let amethyst = Math.floor(Math.random()*12)+1;
 
-console.log(pearl);
+console.log(amethyst);
 
 let emld = Math.floor(Math.random()*12)+1;
 
@@ -50,8 +50,8 @@ function lose() {
     reset();
 }
 
-$('#pearl').click(function() {
-    totScore = totScore + pearl
+$('#amethyst').click(function() {
+    totScore = totScore + amethyst
     $('#totScore').text(totScore);
     //console.log(pearl);
     if ( totScore === randNumber ) {
@@ -126,7 +126,7 @@ function reset () {
 function resetTwo () {
     randNumber = Math.floor(Math.random() * ((120-19)+1) + 19);
     $('#randNum').html(randNumber);
-    pearl = Math.floor(Math.random()*12)+1;
+    amethyst = Math.floor(Math.random()*12)+1;
     emld = Math.floor(Math.random()*12)+1;
     ruby = Math.floor(Math.random()*12)+1;
     sapphire = Math.floor(Math.random()*12)+1;
