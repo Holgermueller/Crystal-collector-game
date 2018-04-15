@@ -9,8 +9,6 @@ $('#randNum').html(randNumber);
     
 console.log(randNumber); //it works!!!
 
-
-
 //each crystal has a hidden value i.e. random number between1 and 12
 
 let pearl = Math.floor(Math.random()*12)+1;
@@ -113,7 +111,6 @@ $('#sapphire').click(function() {
 })
 
 //random numbers (jewels) get added together: look above
-
 //script determines if player wins or loses and outcome recorded in winsLosses
 
 console.log(wins);
@@ -134,7 +131,5 @@ function resetTwo () {
     ruby = Math.floor(Math.random()*12)+1;
     sapphire = Math.floor(Math.random()*12)+1;
 }
-
-
 
 });

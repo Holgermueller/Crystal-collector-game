@@ -56,6 +56,21 @@ body {
     border-radius: 15px;
 }
 
+.emld {
+    height: 80px;
+    width: 80px;
+}
+
+.ruby {
+    height: 80px;
+    width: 80px;
+}
+
+.sapphire {
+    height: 80px;
+    width: 80px; 
+}
+
 .total-score {
     float: left;
     position: relative;
@@ -69,19 +84,7 @@ body {
     font-size: 3em;
     width: 26%;
     margin: 2% 0 0 22%;
-}
-
-.t-s-a {
-    text-align: center;
-    background-color: #00e5ff;
-    border: 8px solid;
-    border-top-color: #00d8ff;
-    border-right-color: #00d8ff;
-    border-bottom-color: #00a9ff;
-    border-left-color: #00a9ff;
-    font-size: 3em;
-    width: 26%;
-    margin: 18% 0 0 22%;
+    padding-bottom: 12px;
 }
 
 .wins-loses {
@@ -96,6 +99,7 @@ body {
     border-bottom-color: #00a9ff;
     border-left-color: #00a9ff;
     margin-top: 2%;
+    margin-right: 20%;
     font-size: 1.5em;
 }
 
@@ -103,7 +107,7 @@ body {
     width: 26%;
     padding-top: 4px;
     padding-bottom: 4px;
-    margin: 25% 0 0 36%;
+    margin: 33% 0 0 36%;
     text-align: center;
     background-color: #00e5ff;
     border: 8px solid;
