@@ -1,10 +1,10 @@
-# week-4-game
+# Crystal Collector
 
-This is one of my homework assignments from the fourth week of the coding bootcampe course I attended, which you can probably tell from the title.
+This is one of my homework assignments from the fourth week of the coding bootcampe course I attended.
 
 ## Prerequisites and installation
 
-I used no extensions in the building of this game. The most I did was copy the jQuery cdn and paste it into my html page. To obtain the cdn, either Google jQuery cdn or follow this link: [cdn link] (https://code.jquery.com/).
+I used no extensions in the building of this game. The most I did was copy the jQuery cdn and paste it into my html page. To obtain the cdn, either Google jQuery cdn or follow this link: [cdn link](https://code.jquery.com/).
 
 ## Authors
 
@@ -12,7 +12,7 @@ Holger Mueller - Everything
 
 ## License
 
-This project was licensed under the MIT - check out the [MIT link] (https://github.com/Holgermueller/week-4-game/blob/master/LICENSE).
+This project was licensed under the MIT liscense - check out the [MIT link](https://github.com/Holgermueller/week-4-game/blob/master/LICENSE).
 
 ## Acknowledgments
 
