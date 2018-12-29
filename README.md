@@ -1,6 +1,6 @@
 # Crystal Collector
 
-This is one of my homework assignments from the fourth week of the coding bootcampe course I attended.
+This is one of my homework assignments from the fourth week of the coding bootcamp course I attended.
 
 ## Prerequisites and installation
 
@@ -12,7 +12,7 @@ Holger Mueller - Everything
 
 ## License
 
-This project was licensed under the MIT liscense - check out the [MIT link](https://github.com/Holgermueller/week-4-game/blob/master/LICENSE).
+This project was licensed under the MIT license - check out the [MIT link](https://github.com/Holgermueller/week-4-game/blob/master/LICENSE).
 
 ## Acknowledgments
 
