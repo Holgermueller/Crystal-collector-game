@@ -1,0 +1,25 @@
+{
+  "name": "crystal-collector-game",
+  "version": "1.0.0",
+  "description": "This is one of my homework assignments from the fourth week of the coding bootcamp course I attended.",
+  "main": "index.js",
+  "scripts": {
+    "postcss:watch": "postcss Assets/style.css --dir public --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Holgermueller/Crystal-collector-game.git"
+  },
+  "author": "Holger Mueller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Holgermueller/Crystal-collector-game/issues"
+  },
+  "homepage": "https://github.com/Holgermueller/Crystal-collector-game#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.11",
+    "cssnano": "^5.1.13",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0"
+  }
+}

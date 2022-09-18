@@ -1,76 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Crystal Collector</title>
 
-<!--styles-->
-<link rel="stylesheet" type="text.css" href="../Assets/reset.css">
-<link rel="stylesheet" type="text/css" href="./Assets/style.css">
- <!--scripts-->
- <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="public/style.css" />
+    <!--scripts-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header class="header"><h1>Crystal Collector!!</h1></header>
 
     <main>
-
-    <div class="instructions">
-
+      <div class="instructions">
         <h2>Instructions:</h2>
         <p>You will be given a random number at the begining of this game.</p>
         <p>
-            There are four crystals below.
-            By clicking on a crystal, you will add a specific number of points
-            to your total score.
+          There are four crystals below. By clicking on a crystal, you will add
+          a specific number of points to your total score.
         </p>
         <p>
-            You win by matching your total score to the random number;
-            you lose the game if your score exceeds the random number.
+          You win by matching your total score to the random number; you lose
+          the game if your score exceeds the random number.
         </p>
-        <p>
-            Each crystal's value remains hidden until you click it.
-        </p>
-        <p>
-            Each crystal's value changes each time the game starts.
-        </p>
-    </div>
+        <p>Each crystal's value remains hidden until you click it.</p>
+        <p>Each crystal's value changes each time the game starts.</p>
+      </div>
 
-    <div class="random-number" id="randNum"></div>
+      <div class="random-number" id="randNum"></div>
 
-    <div class="crystal-array" id="crysArray">
-        <button id="amethyst" class="jewel amethyst"><img src="#" alt=""></button>
-        <button id="emld" class="jewel emld"><img src="#" alt=""></button>
-        <button id="ruby" class="jewel ruby"><img src="#" alt=""></button>
-        <button id="sapphire" class="jewel sapphire"><img src="#" alt=""></button>
-    </div>
+      <div class="crystal-array" id="crysArray">
+        <button id="amethyst" class="jewel amethyst"></button>
+        <button id="emld" class="jewel emld"></button>
+        <button id="ruby" class="jewel ruby"></button>
+        <button id="sapphire" class="jewel sapphire"></button>
+      </div>
 
-    <div class="total-score">
-        <div>Your total score is:</div>
-        <br>
-        <div id="totScore">0</div>
-    </div>
+      <div class="flex-container">
+        <div class="flex-left">
+          <div class="total-score">
+            <p>Your total score is:</p>
 
-        <div class="wins-loses">
-            <p>Wins:</p>
-            <p id="wins">0</p>
-            <p>Losses:</p>
-            <p id="losses">0</p>
+            <p id="totScore">0</p>
+          </div>
         </div>
 
+        <div class="flex-right">
+          <div class="flex-container">
+            <div class="mini-flex-left">
+              <p class="wins">Wins:</p>
+              <p class="wins" id="wins">0</p>
+            </div>
+            <div class="mini-flex-right">
+              <p class="losses">Losses:</p>
+              <p class="losses" id="losses">0</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer class="footer">&copy; 2018 Holger Mueller</footer>
+    <footer class="footer">&copy; 2018 - 2022 Holger Mueller</footer>
 
-<script type="text/javascript" src="./Assets/game.js"></script>
-
-</body>
+    <script type="text/javascript" src="./Assets/game.js"></script>
+  </body>
 </html>
