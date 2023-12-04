@@ -105,3 +105,7 @@ $(document).ready(() => {
     sapphire = Math.floor(Math.random() * 12) + 1;
   }
 });
+
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("year").innerHTML = year;
